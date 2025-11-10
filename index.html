@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8">
+  <title>💕 ကောက်စိန်လေး(ပန်ဒါလေး) ရဲ့မှတ်တမ်း😜 💕</title>
+<link rel="stylesheet" href="stype.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Time New', sans-serif;
+  background: linear-gradient(135deg, #f8cdda, #1d2b64); 
+  background-attachment: fixed; /* scroll လုပ်တဲ့အခါ background မလှည့် */
+  color: #336;
+  text-align: center;
+}
+
+    
+
+    .photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  /* center မှာတည့်တည့်ထား */
+  gap: 10px;
+  max-width: 500px;  /* ပုံတွေကျယ်မသွားအောင် ထား */
+  margin: 0 auto;  /* အလယ်တည့် */
+}
+
+    .photo-item {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.photo-item:hover {
+  transform: scale(1.05);
+}
+
+    .photos img {
+      width: 260px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .photos img:hover {
+  transform: scale(1.4);  /* 3.4 က အရမ်းကြီးလို့ 1.4 လောက်ပဲ */
+}
+
+    .photo-item p {
+      margin-top: 16px;
+      font-size: 14px;
+      color: #444;
+    }
+.message {
+   background: url("images/panda.png") no-repeat center center;
+   background-size: cover;    
+   padding: 20px;
+   margin: 20px;
+   border-radius: 15px;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+   /* စာလုံးဒီဇိုင်း */
+   color: white;  /* အဖြူ */
+   font-size: 20px;
+   line-height: 1.6;
+
+   /* စာလုံး outline */
+   -webkit-text-stroke: 0.5px blue; /* အမဲ outline */
+   text-stroke: 0.5px blue;         /* Firefox support နည်းနည်းပါ */
+}
+
+    footer {
+      padding: 10px;
+      background: pink;
+      color: white;
+    }
+
+    /* Lightbox style */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.9);
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(255,255,255,0.5);
+    }
+
+    .lightbox p {
+      color: white;
+      margin-top: 12px;
+    }
+
+    .controls {
+      margin-top: 10px;
+    }
+
+    .btn {
+      background: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 0 5px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: pink;
+      color: white;
+    }
+
+    /* Video Section */
+    .music video {
+      width: 100%;
+      max-width: 500px;
+      margin: 10px 0;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<style>
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .video-item {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+
+  .video-item h3 {
+    margin-bottom: 10px;
+    color: black;
+  }
+
+  video {
+    width: 100%;
+    border-radius: 10px;
+  }
+</style>
+<body>
+
+  <header>
+    <h1>💖 ပန်ဒါလေး(ကောက်စိန်လေး) ရဲ့မှတ်တမ်း😜 💖</h1>
+    <p>ပန်ဒါလေးခင်ဗျာ...အခုဆိုရင်ဖြင့် ပန်ဒါလေးဆွဲခေါ်လာခဲ့တဲ့ ကိုကို့ရဲ့ နှလုံးသားကလေး ကပန်ဒါလေးရဲ့ အချစ်အားဆေးတွေကို မိဝှဲသုံးစွဲရတာကြောင့် ကိုကို့ရဲ့နှလုံးသားလေးက သာယာလှပနေပါပြီ😜
+    ပြောချင်တာကတော့ ပန်ဒါလေးဆိုတဲ့ ကောင်မလေးတစ်ယောက် ကိုကို့‌ဆီကို ဘယ်ကနေဘယ်လို လမ်းမှားပြီးရောက်လာလဲတော့ မသိဘူး။ကိုကိုအနားကိုရောက်တာနဲ့ ဒီကကိုကိုကလည်း ဘာကြောင့်မှန်းမသိ ပန်ဒါလေးရဲ့ အလှကလေးမှာ ယစ်မူးသွားတာပါပဲ 😜</p>
+  </header>
+
+  <section class="gallery">
+    <h2>💕 အမှတ်တရပုံများ 💕</h2>
+    <div class="photos">
+      <div class="photo-item">
+        <img src="images/IMG_1.jpg" onclick="openLightbox(0)">
+        <p>💖 ပုံ ၁ – အေးချမ်းသောအပြုံးပိုင်ရှင်လေး</p>
+      </div>
+      <div class="photo-item">
+        <img src="images/IMG_3.jpg" onclick="openLightbox(1)">
+        <p>🌸 ပုံ ၂ – ပန်ဒါဝက်ဝံလေးရဲ့ selfi😜</p>
+      </div>
+      <div class="photo-item">
+        <img src="images/IMG_6.jpg" onclick="openLightbox(2)">
+        <p>✨ ပုံ ၃ – ‌ဖျားနေတုန်းကလေး😜</p>
+      </div>
+      <div class="photo-item">
+        <img src="images/IMG_20250927_091733_211.jpg" onclick="openLightbox(3)">
+        <p>💕 ပုံ ၄ – အမှတ်တရအရုပ်ကလေး</p>
+      </div>
+      <div class="photo-item">
+        <img src="images/IMG_20251027_124806.jpg" onclick="openLightbox(4)">
+        <p>🌙 ပုံ ၅ – လေးလုံးကလေး😜</p>
+      </div>
+      <div class="photo-item">
+        <img src="images/IMG_20251001_221620_328.jpg" onclick="openLightbox(5)">
+        <p>🌟 ပုံ ၆ – ပိတောက်ပန်းတွေနဲ့အပြိုင်လှ‌နေသူလေး</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="message">
+    <h2>💌 ပန်ဒါလေး အတွက် စာသား 💌</h2>
+    <p>
+      ပန်ဒါလေး…  
+      မင်းနဲ့တွေ့ပြီးတဲ့အချိန်ကစပြီး ငါ့ဘဝဟာ ပိုပြီး အဓိကအကျိုးရှိလာခဲ့တယ်။  
+      မင်းရယ်၊ မင်းရဲ့ အပြုံးလေးရယ် ငါ့နေ့တိုင်းကို အလှပဆုံးအမှတ်တရတွေဖြစ်စေတယ်။  
+      ဒီ Website လေးက ငါ့အနက်မှန်မင်းကို မေတ္တာထိပ်ဆုံးနဲ့ လက်ဆောင်ပေးချင်တာ 💕  
+      အမြဲတမ်း မင်းနဲ့အတူရှိချင်တယ် 😘  
+    </p>
+  </section>
+
+  <section class="videos">
+  <h2>🎥 ပန်ဒါလေး အတွက် Video Gallery 🎥</h2>
+
+  <figure class="video-box">
+    <figcaption>💖 ပန်ဒါလေးခမျာ ကိုယ်‌စိတ်ကောက်နေတုန်း ချော့နေတာလေး😜</figcaption>
+    <video controls>
+      <source src="videos/VID_20251001_221828_277.mp4" type="video/mp4">
+      သင့် Browser က Video ကို မထောက်ပံ့ပါ ❌
+    </video>
+  </figure>
+
+  <figure class="video-box">
+    <figcaption>💕 ချစ်စရာအမူအရာလေးတွေကို ပိုင်ဆိုင်ထားသူလေး</figcaption>
+    <video controls>
+      <source src="videos/e6ff3a45c64a92303d80ddf94670d47b.mp4" type="video/mp4">
+      သင့် Browser က Video ကို မထောက်ပံ့ပါ ❌
+    </video>
+  </figure>
+
+  <figure class="video-box">
+    <figcaption>ပန်ဒါထီးအတွက် လုပ်ပေးထားတာလေး😜</figcaption>
+    <video controls>
+      <source src="videos/e78d35884d7d93c98a11aaa3aca6ec5e.mp4" type="video/mp4">
+      သင့် Browser က Video ကို မထောက်ပံ့ပါ ❌
+    </video>
+  </figure>
+
+  <figure class="video-box">
+    <figcaption>🌈 တစ်ခါတုန်းကအမှတ်တရလေးတစ်ချို့</figcaption>
+    <video controls>
+      <source src="videos/snaptik_7525020093093301505.mp4" type="video/mp4">
+      သင့် Browser က Video ကို မထောက်ပံ့ပါ ❌
+    </video>
+  </figure>
+
+  <figure class="video-box">
+    <figcaption>✨ VC ပြောနေတာထက် မျက်လုံးခြင်းစကားပြောနေကြတာ😝</figcaption>
+    <video controls>
+      <source src="videos/Screenrecorder-2024-09-02-08-13-05-906.mp4" type="video/mp4">
+      သင့် Browser က Video ကို မထောက်ပံ့ပါ ❌
+    </video>
+  </figure>
+</section>
+<script>
+  const videos = document.querySelectorAll("video");
+
+  function checkVideosInView() {
+    videos.forEach(video => {
+      const rect = video.getBoundingClientRect();
+      const inView = rect.top >= 0 && rect.bottom <= window.innerHeight;
+
+      if (inView) {
+        video.play().catch(e => console.log("Autoplay blocked"));
+      } else {
+        video.pause();
+      }
+    });
+  }
+
+  window.addEventListener("scroll", checkVideosInView);
+  window.addEventListener("load", checkVideosInView);
+</script>
+
+<style>
+.videos {
+  padding: 20px;
+  background: #fdf5ff;
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+.videos h2 {
+  text-align: center;
+  color: #ff3399;
+  margin-bottom: 20px;
+}
+.video-box {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.video-box figcaption {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ff66cc;
+}
+.video-box video {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+</style>
+  <!-- Audio Players -->
+  <p>💕 ဆုံးမစကား အပိုင်း(၁)😜</p>
+  <audio controls>
+    <source src="mp3/5_6249183385684547915.mp3" type="audio/mpeg">
+  </audio>
+
+  <p>💕 ဆုံးမစကား အပိုင်း (၂)😜</p>
+  <audio controls>
+    <source src="mp3/5_6249183385684547916.mp3" type="audio/mpeg">
+  </audio>
+
+  <p>💕 ဖုန်းပြောနေတုန်းကပေါ့</p>
+  <audio controls>
+    <source src="mp3/record-1746068001047.mp3" type="audio/mpeg">
+  </audio>
+
+  <footer>
+    <p>💕 Created with Love for ပန်ဒါလေး 💕</p>
+  </footer>
+<!-- Text Grid Section -->
+<section class="text-grid-section">
+  <h2>📚 ပန်ဒါလေး အတွက် စာသားစုစည်းမှု 💬</h2>
+  <div class="grid" id="textGrid"></div>
+
+  <div class="content" id="contentBox">
+    <h3 id="contentTitle"></h3>
+    <p id="contentText"></p>
+    <img id="contentImage" style="max-width:100%; border-radius:12px; margin-top:15px; display:none;">
+  </div>
+</section>
+
+<style>
+.text-grid-section {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 1000px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  text-align: center;
+}
+
+.text-grid-section h2 {
+  font-size: 28px;
+  color: #ff3399;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.grid button {
+  width: 80px;
+  height:120px;
+  background: linear-gradient(135deg, #ff99cc, #ff66cc);
+  color: black;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;  
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.grid button:hover {
+  transform: translateY(-5px) scale(1.05);
+  background: linear-gradient(135deg, #ff3399, #ff66cc);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.content {
+  display: none;
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  margin-top: 30px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+}
+
+.content img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-top: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+</style>
+
+<script>
+  const grid = document.getElementById("textGrid");
+  const contentBox = document.getElementById("contentBox");
+  const title = document.getElementById("contentTitle");
+  const text = document.getElementById("contentText");
+  const img = document.getElementById("contentImage");
+
+  // ✅ Button နာမည် array (Text1~30 ကိုသင့်လိုချင်နာမည်နဲ့ပြောင်းနိုင်)
+const names = [
+  "အချစ်ရှာပုံတော်", "ဖူးစာဖက်နှင့်အနီးတဝိုက်", "ချစ်ခြင်းရဲ့ခရီးအစ", "တိတ်တခိုးအချစ်", "နှလုံးသားမှတ်တမ်း", "မူးဝေနေသော ပန်ဒါကလေး",
+  "ပန်ဒါလေးပေးစာ", "ယာယီခွဲခွာခြင်း", "စိတ်အားထက်သန်နေသူလေး", "ရင်းနှီးရခြင်းအကြောင်းအရင်း", "ချစိသူ့ခရီးလမ်းအစ", "သကြားလုံးလူသား",
+  "ပန်ဒါလေးနှင့် အရှင်းတော်ပုံ", "ပန်တို့နှင့်အပြိုင်လှသူကလေး", "ပန်ဒါလေးဖြစ်ပေါ်လာပုံ", "ပန်ဒါပိစိလေး", "အနိုင်စားနေ", "အနားကပ်",
+  "အသံ", "ပျော်ရွှင်မှု", "မသိမဖြစ်", "နှလုံးခုန်", "မျက်လုံးပြုံး", "ည",
+  "ခံစားချက်", "အမြဲတမ်း2", "အနာဂတ်", "အပြုံးမှန်", "နားလည်မှု", "အဆုံးအထိ"
+  ];
+
+// ✅ Text data (Text1~30)
+const data = {
+    text1: { text: "❤️27/3/2024❤️ဒိီနေ့က ကိုကိုသဘော်ပေါ်ကိုစရောက်တဲ့နေ့ပေါ့။ ပန်‌ဒါလေးဆိုတဲ့ ကောင်မလေးကိုမသိသေးတဲ့နေ့ပေါ့။ နောက်ပြောရရင် ကိုကို့ဖူးစာဖက်လေးကို မသိသေးတဲ့နေ့ကလေးတစရက်ပေါ့ဗျာ... 💖", image: "images/IMG_20251023_113520.jpg" },
+    text2: { text: "🕐29/3/2024🕐 ဒီနေ့က ကိုကိုပန်ဒါလေးကိုသတိထားမိတဲ့နေ့ပေါ့။ ကိုကိုလေ ပန်ဒါလေးရဲအမူအရာတွေကို စတင်ပြီးသဘောကျလာတယ်။ ပန်ဒါလေးရဲ့အမူအရာတွေက ကိုကို့ရဲ့နှလုံးသားကလေးကို စတင်ပြီး လူံ့ဆော်စပြုလာခဲ့တယ်။ အဲဒီအချိန်တုန်းက ပန်ဒါလေးရဲ့ရှေ့တည့်တည့်မှာ ကိုကိုရှိတယ်လေ။ပန်ဒါလေးရဲ့ ချစ်စရာအမူအရာလေးတွေကို အနီးကပ်မြင်ခဲ့ရတာပေါ့😍 ✨", image: "images/Screenshot_2024-04-29-08-50-30-338_com.miui.gallery.jpg" },
+    text3: { text: "❤️30/3/2024❤️ပန်ဒါလေးကို ကြည့်ရင်းကြည့်ရင်း ကိုကိုတဖြည်းဖြည်း ပန်ဒါလေးက်ုစပြီးချစ်မိသွားတယ်။အဲနေ့က ပန်ဒါလေးမောင်လေးက ပန်ဒါလေးကိုစနေတဲ့အချိန် ပန်ဒါလေးရဲ့ အဖိုးတန်တဲ့အပြုံးလေးတစ်ခုကို မြင်လိုက်ရတော့ ကိုကိုနှလုံးသားလေးမှာ ဗလောင်းတွေဆူသွားရတယ်ကွာ ပန်ဒါလေးရယ်🤧", image: "images/panda.png" },
+    text4: "ကိုကိုပန်ဒါလေးကိုချစ်မိသွားတော့ ဘာပဲဖြစ်ဖြစ် ကိုကိုပန်ဒါလေးနဲ့စကားပြောချင်တယ်။ပန်ဒါလေးနဲ့ မသိသေးတော့ ကိုကိုဘယ်လိုပြောရမလဲ ကိုကိုမသိဘူး။ကိုကိုပန်ဒါလေးနဲ့ ခင်မင်ချင်တာပဲ ကိုကိုသိတယ်။ ❤️",
+
+    // Text5~10: ပုံတွဲ
+    text5: { text: "🐼9.4.2024🐼. အဲနေ့ကမနက်မိုးလင်းလာတော့ သာယာလှပတဲ့ မျက်ဝန်းတစ်စုံက်ို မြင်လိုက်ရတဲ့အခိုက်အတန့်ပေါ့😍။ ပန်ဒါလေးနဲ့ ခင်မင်မူရပြီး နောက်နှစ်ရက်ပေါ့။ ကိုကိုက ခင်မင်မူရရင်နဲ့ပဲ ကျေနပ်ခဲ့ပါတယ်။ ဒါပေမယ့် ပန်ဒါလေးရဲ့ အလှကလေးတွေရော😍၊ အမူအရာလေးတွေရော😍 မလွန်ဆန်နိုင်တဲ့အဆုံး ကိုကို့နှလုံးသားမှာရော ပန်ဒါလေးပုံရိပ်တွေကိုကို ပန်ဒါလေးမသိအောင် မှတ်တမ်းတင်ခဲ့ပါတယ်🤫။ အောက်ကဒီပုံလေးပေါ့😜။ အဲနေ့က ပန်ဒါ လေးက သနပ်ခါးလိမ်းပြီးတဲ့ အချိန်ကလေး ပန်ဒါ လေးနဲ့ ချစ်သူမဖြစ်ခဲ့ရရင်တောင် ပန်ဒါလေး ပုံ‌ေလးကို အလွမ်းပြေကြည့်ရင်း အားအင် တွေရနေမှာပါ💪' 💌", image: "images/IMG_20251023_101852.jpg" },
+    text6: { text: "အောက်ကပုံလေးကတော့ 9.4.24 ရက်နေ့က ပန်ဒါလေးခေါင်းမူးနေတဲ့ပုံလေး😜 ချစ်စရာအမူအရာလေးတွေမို့ ကိုကိုသိမ်းထားခဲ့လိုက်တာ😘 အဲတုန်းက ပန်ဒါလေးကတော့မသိဘူးပေါ့🤧 တကယ်လို့ သဘော်ကပ်ရင် ပန်ဒါလေးနဲ့ ခွဲရတော့မှာမို့  ပန်ဒါလေးပုံရိပ်လေးတွေကို မမြင်‌ရတော့မှာမို့ ကိုကိုသိမ်းထားခဲ့လိုက်တာပါ♥️။ ပြီးတော့ အဲနေ့က ပန်ဒါလေးနဲ့စကားပြောမို့ကြိုးစားခဲ့ပါသေးတယ် ဒါပေမယ့် ကောက်စိန်လေး‌က လိူင်းမူးပြီး အလုပ်တွေရူပ်နေလို့😜  ", image: "images/IMG_20251023_101924.jpg" },
+    text7: { text: "ပန်ဒါလေးမဖြစ်သေးခင် ကောင်မလေးက အဲစာကလေးကို အတင်းထည့်ပေးသွားတာလေး😜 အဲအချိန်တုန်းကပန်ဒါလေးရဲ့ အနီးဆုံးမှာ ရှိသွားခဲ့ရတာပေါ့❤️ အဲအချိန်လေးတွေကိုလည်း အခုအချိန်ထိ အမှတ်ရနေဆဲပါပဲကွာ ပန်ဒါ‌လေးရယ်🐼", image: "images/IMG_20240410_174611.jpg" },
+    text8: { text: "ဒါလေးကတော့ ကိုကို့အတွက် ဝမ်းနည်စရာလေးပေါ့😔 ပန်ဒါလေးနဲ့ ခွဲခွာရတော့မယ်။ကိုကို့မှာ ပန်ဒါလေးကိုနောက်ထပ် မြင်မို့အခွင့်အရေးမရှိတော့ဘူး😔 ခွဲခွာရတော့မယ့် ပန်ဒါလေးကို ကိုကိုငေးကြည့်နေမိခဲ့တယ်😔 ပြီးတော့ပိုဆိုးတာက ပန်ဒါလေးမှာ ကောင်လေးရှိတယ်ဆိုပြီး ထင်ခဲ့မိတယ် ဘာပဲဖြစ်ဖြစ် ပန်ဒါလေးနဲ့ ခင်မင်ခွင်ရခဲ့ ရုံပဲကျေနပ်မိပါသည်😔 ကံမကုန်ရင်တော့ ပြန်ပြီး ဆုံတွေ့ရမှာပေါ့", image: "images/IMG_20251023_102023.jpg" },
+    text9: { text: "ခါးထောက်ထားတာလေးကချစ်စရာလေး😜 ရန်ကုန်ရောက်ပြီဆိုတာနဲ့ ကုန်းတက်မို့စိတ်အားထက်သန်နေသူလေး😜 အဲကြားထဲ ကိုကိုအထုပ်တွေသယ်နေတုန်း ပန်ဒါလေးနဲ့အနီးကပ်စကားပြောခဲ့ရတယ်❤️ အဲဒီတန်ဖိုးရှိလှတဲ့အချိန်လေးကို ဘယ်လိုမျိုးနဲ့မှ  အစားထိုးလို့မရဘူး🌹", image: "images/IMG_20251023_102023.jpg" },
+    text10: { text: "❤️7.4.2024❤️ကိုကိုတို့ ချစ်သူဘဝကို ရောက်ရှိနိုင်မို့ ပထမဆုံးလှေကားတစ်ချပ်က ကိုကိုပန်ဒါလေးကို ခင်မင်မူတောင်းတဲ့ အချိန်ကလေးပေါ့😜။အဲတုန်းက ပန်ဒါလေးနဲ့ ရင်းနှီးစေချင်ခဲ့တာပါ။အဲတုန်းကလည်း အကြောင်းအမျိုးမျိုးကြောင့် ပန်ဒါလေးကို ခင်မင်မူတောင်းပုံလေးကလည်း ရိုးရှင်းနေခဲ့တယ်။အဲပုံကလေးကို ပန်ဒါလေးမှတ်မိအုန်းမှာပါ😜 ။အဲလိုနဲ့ပဲ ပန်ဒါလေးက ကိုကို့ခင်မင်မူကို လက်ခံခဲ့တယ်။💫", image: "images/17612805805182410097654536772557.jpg" },
+
+    // အခြား text11~30 (စာသားပဲ)
+    text11: { text: "နောက်တော့ မထင်မှတ်ပဒ ပြန်ပြီးအဆက်အသွယ်တွေရခဲ့ကြတယ်❤️။အဲဒီလိုနဲ့ပဲ ကိုတို့ချစ်သူဘဝခရီးလမ်းကို စတင်ကာ အတူလက်တွဲ လျှောက်လမ်းခဲ့ရတာပေါ့😍။", image: "images/IMG_20250503_100816_658.jpg" },
+    text12: { text: "ဒီကောင်ကလေးကတော့ ကိုကို့ရဲ့ သကြားလုံးကလေးပေါ့❤️။ ပန်ဒါလေးရဲ့မွေးနေ့ကလေးမှာ လက်ဆောင်တစ်ခုပေးချင်တာနဲ့ ဘာပေးရမလဲကြည့်တာ🤫 ပန်ဒါလေးအနားမှာ ကိုကို့ကိုယ်စားရှိပေးနိုင်မယ့် ဟောဒီက ကိုကို့ရဲ့ကိုယ်ပွားကလေးကို ပြေးပြီးမြင်လိုက်ရတာပါပဲ😜 ဒီကိုယ်ပွားလေးကတော့ ပန်ဒါလေးဆီကို သွားရတော့မှာမို့ ပျော်နေလိုက်ပုံများ😜", image: "images/IMG_20240819_141330.jpg" },
+    text13: { text: "ဒါလေးကတော့... ပန်ဒါလေးပါးကလေးကို အကျီပန်း‌ ရောင်နဲ့တစ်ယောက် ကိုင်လို့သဝန်တိုသလို စနေတာကို ညီမလေးကိုင်တာပါဆိုပြီး အတင်းရှင်းပြ‌‌ နေတာလေး😜မယုံမှာစိုးလို့ဆိုပြီး ညီမလေး အဝတ်ကိုချွတ်ပြီး ဓါတ်ပုံ ရိုက်ပြီးပြ နေတာလေး😜။ ကြည့်စမ်းပါအုန်း....😜😜😜", image: "images/IMG_20250503_100816_658.jpg" },
+    text14: { text: "အရမ်းကိုချစ်စရာကောင်းရတဲ့ ပန်ဒါလေး🐼 ပန်ကလေးတွေနဲ့အပြိုင် လှနေလိုက်တာများ❤️ ‌", image: "images/IMG_1.jpg" },
+    text15: { text: "နည်း‌နည်းပြောရမယ်ဆိုရင် သူများနဲ့မတူဘဲ ဘာလို့ပန်ဒါလေးလို့ခေါ်တာလည်းတွေးမိကြမှာပါ🤫 ကျွန်တော်သူကို စတွေ့တွေ့တုန်းက လိူင်းမူးနေတာလေးတွေက ပန်ဒါကလေးလိုမျိုး ပြီးတော့ ပန်ဒါလေးတွေလို ချစ်စရာကောင်းတဲ့ မျက်ဝန်းတစ်စုံကို ပိုင်ဆိုင်ထားရှိတယ်😜ပြီးတော့ သူ့အမူအရာတွေတွေက ပန်ဒါလေးတွေလိုမျိုး အများကိုပြုံးပျော်ရွှင်စေတယ်❤️ကျွန်တော့်အတွက်တော့ ချစ်စရာအကောင်းဆုံး သတ္တဝါလေးဟာ ပန်ဒါကလေးပါပဲ....  ‌", image: "images/IMG_20251008_195648.jpg" },
+    text16: { text: "ဟဲ ဟဲ ဟဲ....ဒါလေးကတော့ ပန်ဒါလေးပေါက်စကလေး😜ငယ်ငယ်တုန်းကတဲ့😜ပန်ဒါပေါက်စလေးပေါ့ ပိစိကွေးလေး😜 ဟဲ.. ဟဲ... ဟဲ..❤️ ‌", image: "images/FB_IMG_17601939781841996.jpg" },
+    text17: { text: "ဒါလေးကတော့ ငယ်ငယ်တုန်းကတည်းက ကိုကို့ရဲ့ယောက်ဖကလေးကို အနိုင်ကျင့်နေပုံ😜 ကြည့်ပါအုန်း သူများသောက်မလို့လုပ်နေတာကို လုနေတာလေးများ😜ချစ်စရာ‌ကလေး❤️ ‌", image: "images/FB_IMG_17601937498164098.jpg" },
+    text18: { text: "အရင်တုန်းက vcပြောနေတုန်း လိုင်းမကောင်းတော့ ကိုကိုစိတ်ပူနေမှာပဲဆိုပြီး ပြောနေတဲ့ပုံစံလေးတွေ😜 ‌", image: "images/IMG_20251024_114247.png" },
+    text19: { text: "ဒါလေးကတော့ ဟိုးအရင်အချိန်တုန်းကပေါ့ ပန်ဒါလေးရဲ့ ချစ်စရာပုံစံလေးတွေပေါ့ဗျာ😜 ‌", image: "images/IMG_20251024_120839.jpg" },
+    text20: { text: "ဒီကောင်လေးကျတော့ ဟိုးအရင် ကလေးရုပ်တွေနဲ့😜 ပထမဦးဆုံး ရှပ်တစ်ပြတ် စုံတွဲ selfieကလေး😜 ‌", image: "images/IMG_20250508_103643.jpg" },
+    text21: { text: "အဟယ်...ဒီပုံလေးကတော့ ပန်ဒါလေးရဲ့ ချစ်စရာကောင်းတဲ့အမူအရာလေးတစ်ခုပေါ့ 😜အလှပြင်နေတာလေး😜 စိတ်ဝင်စားနေတာ သူများကိုတောင် မကြည့်ဘူး🤧😜 ‌", image: "images/Screenshot_2025-10-09-16-50-13-596_com.miui.videoplayer.png" },
+    text22: { text: "ဟောဗျာ...စိတ်ကောက်နေပါတယ်ပေါ့😜 ကောက်နေတာလေးကို ကချစ်စရာလေး❤️ အားနေကောက်တတ်တဲ့ ကောက်စိန်ကလေး 😜နောက်ထပ်အများကြီးလည်း ကောက်နိုင်ပါစေဗျာ... ‌", image: "images/IMG_20251024_150833.jpg" },
+    text23: { text: " ‌ဒါလေးကတော့ ပန်ဒါလေးပြောချင်တာကတော့ (ပြင်ဆင်ပြီးသွားပြီ)ဆိုတဲ့အမူအရာလေးနဲ့😜အခုမှပဲ ကြည့်တော့တယ်🤧😜အဲလို အမူအရာလေးတွေကြောင့် ဟောဒီကလူက အရည်ပျော်နေရတာ❤️😜", image: "images/Screenshot_2025-10-09-16-56-16-846_com.miui.videoplayer.png" },
+    text24: { text: "အရမ်းကိုချစ်စရာကောင်းရတဲ့ ပန်ဒါလေး🐼 ပန်ကလေးတွေနဲ့အပြိုင် လှနေလိုက်တာများ❤️ ‌", image: "images/IMG_1.jpg" },
+    text25: { text: "အရမ်းကိုချစ်စရာကောင်းရတဲ့ ပန်ဒါလေး🐼 ပန်ကလေးတွေနဲ့အပြိုင် လှနေလိုက်တာများ❤️ ‌", image: "images/IMG_1.jpg" },
+    text26: { text: "အရမ်းကိုချစ်စရာကောင်းရတဲ့ ပန်ဒါလေး🐼 ပန်ကလေးတွေနဲ့အပြိုင် လှနေလိုက်တာများ❤️ ‌", image: "images/IMG_1.jpg" },
+    text27: { text: "အရမ်းကိုချစ်စရာကောင်းရတဲ့ ပန်ဒါလေး🐼 ပန်ကလေးတွေနဲ့အပြိုင် လှနေလိုက်တာများ❤️ ‌", image: "images/IMG_1.jpg" },
+    text28: { text: "အရမ်းကိုချစ်စရာကောင်းရတဲ့ ပန်ဒါလေး🐼 ပန်ကလေးတွေနဲ့အပြိုင် လှနေလိုက်တာများ❤️ ‌", image: "images/IMG_1.jpg" },
+    text29: { text: "အရမ်းကိုချစ်စရာကောင်းရတဲ့ ပန်ဒါလေး🐼 ပန်ကလေးတွေနဲ့အပြိုင် လှနေလိုက်တာများ❤️ ‌", image: "images/IMG_1.jpg" },
+    text30: { text: "အရမ်းကိုချစ်စရာကောင်းရတဲ့ ပန်ဒါလေး🐼 ပန်ကလေးတွေနဲ့အပြိုင် လှနေလိုက်တာများ❤️ ‌", image: "images/IMG_1.jpg" },
+  };
+
+  // Buttons ဖန်တီးခြင်း
+  for (let i = 1; i <= 30; i++) {
+  const btn = document.createElement("button");
+  btn.textContent = names[i-1];  // Button နာမည်
+  btn.onclick = () => {
+    const item = data[`text${i}`];
+    title.textContent = names[i-1];  // Content Title
+    // အခြား logic အတိုင်း
+
+      if (item) {
+        if (typeof item === "string") {
+          text.textContent = item;
+          img.style.display = "none";
+        } else {
+          text.textContent = item.text || "";
+          if (item.image) {
+            img.src = item.image;
+            img.style.display = "block";
+          } else {
+            img.style.display = "none";
+          }
+        }
+      } else {
+        text.textContent = "ဒီ Text အတွက် စာသားမရှိသေးပါ။";
+        img.style.display = "none";
+      }
+
+      contentBox.style.display = "block";
+      contentBox.scrollIntoView({ behavior: "smooth" });
+    };
+    grid.appendChild(btn);
+  }
+</script>);
+  }
+</script>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <img id="lightbox-img" src="">
+    <p id="lightbox-caption"></p>
+    <div class="controls">
+      <button class="btn" onclick="prevImg()">⬅ Prev</button>
+      <button class="btn" onclick="closeLightbox()">❌ Close</button>
+      <button class="btn" onclick="nextImg()">Next ➡</button>
+    </div>
+  </div>
+
+  <script>
+    let currentIndex = 0;
+    const images = [
+      "images/IMG_1.jpg",
+      "images/IMG_3.jpg",
+      "images/IMG_6.jpg",
+      "images/IMG_20250927_091733_211.jpg",
+      "images/IMG_20250928_211643_025.jpg",
+      "images/IMG_20251001_221620_328.jpg"
+    ];
+
+    const captions = [
+      "💖 ပုံ ၁ – အေးချမ်းသောအပြုံးပိုင်ရှင်လေး",
+      "🌸 ပုံ ၂ – လမ်းလျှောက်တဲ့အချိန်",
+      "✨ ပုံ ၃ – အတူတူရင်ဆိုင်ခဲ့တဲ့အချိန်",
+      "💕 ပုံ ၄ – အမှတ်တရနေ့",
+      "🌙 ပုံ ၅ – ညခင်းလေး",
+      "🌟 ပုံ ၆ – မမေ့နိုင်တဲ့အချိန်"
+    ];
+
+    function openLightbox(index) {
+      currentIndex = index;
+      document.getElementById("lightbox").style.display = "flex";
+      document.getElementById("lightbox-img").src = images[currentIndex];
+      document.getElementById("lightbox-caption").innerText = captions[currentIndex];
+    }
+
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+
+    function nextImg() {
+      currentIndex = (currentIndex + 1) % images.length;
+      document.getElementById("lightbox-img").src = images[currentIndex];
+      document.getElementById("lightbox-caption").innerText = captions[currentIndex];
+    }
+
+    function prevImg() {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      document.getElementById("lightbox-img").src = images[currentIndex];
+      document.getElementById("lightbox-caption").innerText = captions[currentIndex];
+    }
+  </script>
+</body>
+</html>
