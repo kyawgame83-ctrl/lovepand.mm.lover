@@ -1,0 +1,142 @@
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.video-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.video-box figcaption {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+video {
+  width: 100%;
+  border-radius: 10px;
+}
+./* Gallery Container */
+.gallery {
+  text-align: center;
+  padding: 20px;
+}
+
+.gallery h2 {
+  font-size: 28px;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  margin-bottom: 20px;
+}
+
+/* Photo list */
+.photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Each photo item */
+.photo-item {
+  background: #fff;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Image style */
+.photo-item img {
+  width: 100%;
+  border-radius: 15px;
+  transition: transform 0.4s ease;
+}
+
+/* Hover effect */
+.photo-item:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.photo-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Caption */
+.photo-item p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #444;
+  text-align: center;
+}
+
+/* Gradient border animation */
+.photo-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 2px;
+  background: linear-gradient(45deg, #ff4ecd, #4ef9ff, #ffc34e, #4eff8c);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  animation: border-rotate 3s linear infinite;
+}
+
+@keyframes border-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.video-item {
+  margin: 20px auto;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  background: #fff;
+  padding: 10px;
+}
+
+.video-item h3 {
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #444;
+  text-align: center;
+}
+
+video {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;   /* အလယ်တည်စေမယ် */
+  gap: 20px;                 /* ပုံတိုင်းကြား အနည်းငယ်အချိုး */
+  margin: 0 auto;            /* အလယ်ကျ */
+  max-width: 900px;          /* မျက်နှာပြင်ကျယ်ဆုံးကန့်သတ် */
+}
+
+.photos img {
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  width: 200px;              /* ပုံအရွယ်တစ်မျိုးတည်း */
+  height: auto;
+}
